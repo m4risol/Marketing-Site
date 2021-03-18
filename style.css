@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 320px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+
+/* nav content */
+
+nav {
+  height: 72px;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 0;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0 32px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+nav a:hover {
+  color: gray;
+  transition: 0.3s ease-out;
+}
+
+
+.navbutton {
+  background-color: #5ba3c3;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+}
+
+.navbutton:hover {
+  text-decoration: none;
+  background-color: #7aadc4;
+  color: white;
+  transition: 0.3s ease-out;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+#logo {
+  display: flex;
+  height: 100%;
+  padding: 0 32px;
+  align-items: center;
+  transition: 0.4s;
+}
+
+/* hamburger menu content */
+
+#slideout-menu {
+  display: none;
+  background: #5ba3c3;
+  z-index: 100;
+  position: fixed;
+  transition: 0.4s;
+  margin-top: 72px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#slideout-menu ul {
+  list-style: none;
+  padding: 0 32px;
+}
+
+#slideout-menu ul li {
+  padding: 8px;
+}
+
+#slideout-menu a {
+  font-size: 20px;
+  color: white;
+}
+
+#slideout-menu a:hover {
+  color: rgb(231, 231, 231);
+  transition: 0.3s ease-out;
+}
+
+#menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding: 0 4px;
+  color: black;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* header content */
+
+#header {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("images/home.png") no-repeat fixed center;
+  color: white;
+  text-align: center;
+}
+
+#header h1 {
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#header p {
+  font-size: 20px;
+}
+
+.aboutus h1 {
+  font-size: 40px;
+  text-align: left;
+}
+
+.aboutus {
+  padding: 40px;
+}
+
+.headerbutton {
+  background-color: #d66a62;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  margin-bottom: 100px;
+}
+
+.headerbutton:hover {
+  background-color: #e47b74;
+  color: white;
+  transition: 0.3s ease-out;
+}
+
+.testimonial {
+  background-color: #5ba3c3;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.testimonial h2 {
+  padding: 0 100px;
+  font-style: italic;
+}
+
+.testimonial p {
+  font-size: 20px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+#services {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 10px;
+}
+
+hr {
+  width: 5%;
+}
+
+/* about us page */
+
+#headerimageabout {
+  min-height: 300px;
+  background: url("images/aboutus.png") fixed;
+  object-fit: cover;
+  color: white;
+  background-size: cover;
+  width: 100%;
+}
+
+#headerimageabout h1 {
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#headerimageabout p {
+  font-size: 20px;
+
+}
+
+.whyus {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  padding: 50px;
+}
+
+.whyus h2 {
+  font-size: 40px;
+}
+
+.whyus p {
+  font-size: 20px;
+}
+
+.reviews {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: white;
+  color: black;
+  background: url("images/home.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.reviews div {
+  background-color: white;
+  color: black;
+  width: 300px;
+
+
+}
+
+.reviews i {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+
+.reviews img {
+  border-radius: 50px;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+
+.managers img {
+  width: 100%;
+  height: auto;
+}
+
+.managers p {
+  margin-top: -20px;
+}
+
+.managers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
+/* contact page */
+
+#headerimagecontact {
+  min-height: 300px;
+  background: url("images/contact.png") fixed;
+  object-fit: cover;
+  color: white;
+  background-size: cover;
+  width: 100%;
+}
+
+#headerimagecontact h1 {
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  padding: 50px;
+}
+
+.contact div {
+  padding: 1rem;
+}
+
+.contact img {
+  height: auto;
+  max-width: 100%;
+  width: 500px;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+  border: none;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+
+input {
+  margin-bottom: 20px;
+
+}
+
+input[type=submit] {
+  background-color: #d66a62;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 10px 32px;
+}
+
+input[type=submit]:hover {
+  background-color: #e47b74;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.contact-right {
+  text-align: center;
+}
+
+/* services page  */
+
+#headerimageservices {
+  min-height: 300px;
+  background: url("images/services.png") fixed;
+  object-fit: cover;
+  color: white;
+  background-size: cover;
+  width: 100%;
+}
+
+#headerimageservices h1 {
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+
+.branding,
+.web-dev,
+.seo {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  padding: 50px;
+}
+
+.branding img,
+.web-dev img,
+.seo img {
+  padding: 10px;
+}
+
+
+
+/* footer content */
+
+footer {
+  background-color: whitesmoke;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  float: left;
+  color: black;
+}
+
+.footer {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer>* {
+  flex: 1 100%;
+}
+
+.footer-right>* {
+  flex: 1 50%;
+}
+
+.footer-bottom {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-middle {
+
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.footer-right {
+
+  text-align: center;
+}
+
+.footer-right p {
+  line-height: -2px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer a:hover {
+  color: gray;
+  transition: 0.3s ease-out;
+}
+
+footer img {
+  margin-top: 5px;
+  display: flex;
+}
+
+footer h2 {
+  letter-spacing: 3px;
+}
+
+footer i {
+  font-size: 25px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  #menu-icon {
+    display: flex;
+  }
+
+  #slideout-menu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .whyus {
+    padding-top: 1rem;
+  }
+
+  .seo {
+    flex-direction: column-reverse;
+  }
+
+  .branding,
+  .web-dev {
+    flex-direction: column;
+
+  }
+
+  .reviews {
+    flex-direction: column;
+
+  }
+
+  .reviews div {
+    margin: 50px;
+  }
+
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .container {
+    width: 95%;
+  }
+
+  section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .whyus {
+    flex-direction: column;
+
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .reviews div {
+    margin: 50px;
+  }
+
+
+  .footer-left img {
+    display: flex;
+    margin: auto;
+  }
+
+  .footer-middle {
+    margin-top: 1em;
+  }
+
+  input[type=submit] {
+    width: 100%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #header h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}

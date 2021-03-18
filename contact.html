@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>M Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="slideout-menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="images/M.png" alt="logo" width="150px" height="40px" /></a>
+        </div>
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html" class="navbutton">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section id="headerimagecontact">
+        <div class="container">
+            <h1>CONTACT US</h1>
+    </section>
+
+    <h2 class="title">Want more information? <br> Send us a message.</h2>
+    <hr>
+
+    <section class="contact container">
+        <div class="contact-left">
+            <form action="/">
+                <label for="firstname">Name</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="phone-num">Phone Number</label><br>
+                <input type="tel" id="phone-num" name="phone-num" required><br>
+
+                <label for="email">E-Mail</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="service">Service Wanted:</label><br>
+                <input type="radio" id="branding" name="service" value="branding">
+                <label for="branding">Branding</label><br>
+                <input type="radio" id="graphic-des" name="service" value="graphic-des">
+                <label for="graphic-des">Graphic Design</label><br>
+                <input type="radio" id="web-dev" name="service" value="web-dev">
+                <label for="web-dev">Web Development</label><br>
+                <input type="radio" id="all" name="service" value="all">
+                <label for="all">All</label><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write something here.."></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="contact-right">
+            <img src="images/office.jpg" alt="office" />
+            <h3>Visit Us</h3>
+            <p>15120 South St.
+                <br>
+                Suite 102
+                <br>
+                Indianapolis, IN 46257</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer container">
+            <div class="footer-left">
+                <img src="images/M.png" alt="elitelogo" width="200px" height="70px" />
+                <p>Marketing agency located in Indianapolis, Indiana. Serving clients all over Indy and the world.
+                    Follow us on our journey on our social media.</p>
+                <div class="footer-social">
+                    <a href="www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="www.youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+
+                </div>
+            </div>
+            <div class="footer-middle">
+                <ul>
+                    <h2>LINKS</h2>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <h2>CONTACT US</h2>
+                    <li><i class="fas fa-envelope"></i></li>
+                    <li>
+                        <p>mmedia@gmail.com</p>
+                    </li>
+                    <li><i class="fas fa-phone"></i></li>
+                    <li>
+                        <p>317-843-3421</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2020 M Media. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
