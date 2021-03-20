@@ -92,7 +92,6 @@ nav ul {
 #logo {
   display: flex;
   height: 100%;
-  padding: 0 32px;
   align-items: center;
   transition: 0.4s;
 }
@@ -145,13 +144,19 @@ nav ul {
 
 #header {
   min-height: 600px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url("images/home.png") no-repeat fixed center;
+  /* background: url("images/home.png") no-repeat fixed center; */
   color: white;
   text-align: center;
+  background: url("images/home.png") fixed;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
 }
 
 #header h1 {
