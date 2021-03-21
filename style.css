@@ -151,7 +151,7 @@ nav ul {
   flex-direction: column;
   color: white;
   /* background: url("images/home.png") no-repeat fixed center; */
-  background-size: auto 100%;
+  /* background-size: auto 100%; */
   text-align: center;
   background: url("images/home.png") fixed;
   object-fit: cover;
@@ -264,10 +264,9 @@ hr {
   color: white;
   background: url("images/aboutus.png") fixed;
   background-repeat: no-repeat;
-  /* object-fit: cover; */
   width: 100%;
   background-position: center;
-
+  object-fit: cover;
 }
 
 #headerimageabout h1 {
