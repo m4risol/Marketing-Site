@@ -144,17 +144,18 @@ nav ul {
 
 #header {
   min-height: 600px;
-  height: auto;
+  /* height: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background: url("images/home.png") no-repeat fixed center; */
   color: white;
+  /* background: url("images/home.png") no-repeat fixed center; */
+  background-size: auto 100%;
   text-align: center;
   background: url("images/home.png") fixed;
   object-fit: cover;
-  background-size: cover;
+  /* background-size: contain; */
   width: 100%;
   background-position: center;
 }
@@ -259,11 +260,14 @@ hr {
 
 #headerimageabout {
   min-height: 300px;
-  background: url("images/aboutus.png") fixed;
-  object-fit: cover;
+  /* background: url("images/aboutus.png") no-repeat fixed center; */
   color: white;
-  background-size: cover;
+  background: url("images/aboutus.png") fixed;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
   width: 100%;
+  background-position: center;
+
 }
 
 #headerimageabout h1 {
@@ -594,13 +598,13 @@ footer i {
     padding-top: 1rem;
   }
 
-  #headerimageabout img{
+  /* #headerimageabout img{
     background-size: auto 100%;
  
   }
   #header {
     background-size: auto 100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 719px) {
