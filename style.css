@@ -150,12 +150,18 @@ nav ul {
   justify-content: center;
   flex-direction: column;
   color: white;
-  background: url("images/home.png") no-repeat fixed center;
-  background-size: auto 100%;
+  background: url("images/home.png") fixed;
+  /* background-size: auto 100%; */
   text-align: center;
-  object-fit: cover;
+  /* object-fit: cover;
   width: 100%;
-	/* background-size: cover; */
+	background-size: cover; */
+
+  height: 70vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 
