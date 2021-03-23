@@ -145,7 +145,7 @@ nav ul {
 #header {
   min-height: 300px;
   height: 90vh;
-  height: auto;
+  /* height: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,10 +154,10 @@ nav ul {
   /* background: url("images/home.png") no-repeat fixed center; */
   background-size: auto 100%;
   text-align: center;
-  background: url("images/home.png") fixed;
-  background-repeat: no-repeat;
+  background: url("images/home.png") no-repeat center center fixed ;
   width: 100%;
-	background-position: center center;
+
+  overflow: hidden;
 
 }
 
