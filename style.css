@@ -145,6 +145,7 @@ nav ul {
 #header {
   min-height: 300px;
   height: 90vh;
+  /* height: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +154,7 @@ nav ul {
   /* background: url("images/home.png") no-repeat fixed center; */
   /* background-size: auto 100%; */
   text-align: center;
-  background: url("images/home.png") no-repeat fixed ;
+  background: url("images/home.png") no-repeat fixed;
   width: 100%;
 	background-size: cover;
 	background-position: center center;
@@ -260,19 +261,13 @@ hr {
 
 #headerimageabout {
   min-height: 300px;
-  height: auto;
   /* background: url("images/aboutus.png") no-repeat fixed center; */
   color: white;
   background: url("images/aboutus.png") fixed;
   background-repeat: no-repeat;
-  max-width: 100%;
+  width: 100%;
   background-position: center;
-  /* object-fit: cover; */
-
- 
-  color: white;
-  background-size: cover;
-  /* width: 100%; */
+  object-fit: cover;
 }
 
 #headerimageabout h1 {
@@ -603,11 +598,10 @@ footer i {
     padding-top: 1rem;
   }
 
- #headerimageabout{
-  height: auto;
+  /* #headerimageabout img{
+    background-size: auto 100%;
  
   }
-    /*
   #header {
     background-size: auto 100%;
   } */
