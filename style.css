@@ -156,8 +156,8 @@ nav ul {
   text-align: center;
   background: url("images/home.png") fixed;
   background-repeat: no-repeat;
-  /* width: 100%; */
-	background-size: cover;
+  width: 100%;
+	background-size: contain;
 	background-position: center center;
 
 }
@@ -265,7 +265,7 @@ hr {
 
 #headerimageabout {
   min-height: 300px;
-  background: url("images/contact.png") fixed;
+  background: url("images/aboutus.png") fixed;
   object-fit: cover;
   color: white;
   background-size: cover;
