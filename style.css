@@ -152,11 +152,12 @@ nav ul {
   flex-direction: column;
   color: white;
   /* background: url("images/home.png") no-repeat fixed center; */
-  background-size: auto 100%;
+  /* background-size: auto 100%; */
   text-align: center;
-  background: url("images/home.png") no-repeat fixed;
+  background: url("images/home.png") fixed;
+  background-repeat: no-repeat;
   width: 100%;
-	/* background-size: cover; */
+	background-size: cover;
 	background-position: center center;
 
 }
